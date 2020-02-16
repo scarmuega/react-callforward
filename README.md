@@ -44,10 +44,10 @@ function Root() {
     const [onPlay, doPlay] = useCallForward();
 
     return (
-        <>
+        <div>
             <Sidebar onClick={onPlay} />
             <Content doPlay={doPlay} />
-        </>
+        </div>
     )
 }
 

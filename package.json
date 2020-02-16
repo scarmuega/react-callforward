@@ -1,6 +1,6 @@
 {
     "name": "react-callforward",
-    "version": "1.0.0-beta1",
+    "version": "1.0.0-beta.1",
     "description": "Like a callback, but forward :)",
     "main": "index.js",
     "scripts": {
