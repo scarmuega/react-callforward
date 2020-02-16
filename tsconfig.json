@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["es2015", "dom"],
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "jsx": "react",
+  }
+}

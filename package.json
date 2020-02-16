@@ -1,0 +1,45 @@
+{
+    "name": "react-callforward",
+    "version": "1.0.0-beta1",
+    "description": "Like a callback, but forward :)",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx jest",
+        "build": "npx tsc",
+        "publish": "npm run build && npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/scarmuega/react-callforward.git"
+    },
+    "keywords": [
+        "commands",
+        "forward",
+        "react",
+        "hooks"
+    ],
+    "author": "scarmuega",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/scarmuega/react-callforward/issues"
+    },
+    "homepage": "https://github.com/scarmuega/react-callforward#readme",
+    "peerDependencies": {
+        "react": ">=16.8"
+    },
+    "devDependencies": {
+        "@testing-library/react": "^9.4.0",
+        "@types/jest": "^25.1.2",
+        "@types/react": "^16.9.11",
+        "@types/react-dom": "^16.9.4",
+        "awesome-typescript-loader": "^5.2.1",
+        "jest": "^25.1.0",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "source-map-loader": "^0.2.4",
+        "ts-jest": "^25.2.0",
+        "typescript": "^3.7.2",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.10"
+    }
+}
