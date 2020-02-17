@@ -66,6 +66,10 @@ function Content({ doPlay }) {
 }
 ```
 
+The above example has been simplified for brevity. To see a running example, check the following codesandbox:
+
+[![Edit call-forward-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/gallant-ishizaka-upqk5?fontsize=14&hidenavigation=1&theme=dark)
+
 Installation
 ------------
 
