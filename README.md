@@ -27,7 +27,7 @@ For example, lets say that you have the following app that displays a video:
 
 The `Sidebar` and the `Content` components are independent, they are oblivious of the existence of each other. The sidebar has a "play" button that needs to trigger the `video.play()` method that exists within the scope of the `Content` component. How would you solve that?
 
-- **alternative #1, using state**: The `Root` component has an `isPlaying` flag in the state, listens to the click callback of the play button and then propagates the state down to the nested `Content` component using props. The `Content` component would compare changes in the props and call the `play()` method accordingly. It works, but you loose the "imperative" nature of just calling a function.
+- **alternative #1, using state**: The `Root` component has an `isPlaying` flag in the state, listens to the click callback of the play button and then propagates the state down to the nested `Content` component using props. The `Content` component would compare changes in the props and call the `play()` method accordingly. It works, but you loose the "imperative" nature of just calling a function. This method will also trigger an, otherwise unnecesary, render of the `Root` component.
 - **alternative #2, using refs**: The `Content` component bubbles up a ref of the video player onto the `Root` component. The `Root` component creates an `onClick` handler that triggers the `play()` inside the ref and then it passes the handler into the `onClick` callback of the `Sidebar` component. It also works, but bubbling things up goes against the "composite" nature of our react components.
 
 If you're happy with either of the above solutions, close this README and stop procastinating, your app won't write itself.
@@ -68,7 +68,7 @@ function Content({ doPlay }) {
 
 The above example has been simplified for brevity. To see a running example, check the following codesandbox:
 
-[![Edit call-forward-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/gallant-ishizaka-upqk5?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit call-forward-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/call-forward-example-upqk5?fontsize=14&hidenavigation=1&theme=dark)
 
 Installation
 ------------

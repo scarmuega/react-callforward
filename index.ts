@@ -19,6 +19,10 @@ class DecoupledCall<T extends AnyCallSignature> {
     }
 
     implement(implementation: T) {
+        if (!!this.implementation) {
+            console.warn("call forward is already implemented, your previous implementation will be overridden")
+        }
+
         this.implementation = implementation;
     }
 

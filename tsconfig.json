@@ -7,5 +7,6 @@
     "esModuleInterop": true,
     "downlevelIteration": true,
     "jsx": "react",
-  }
+  },
+  "exclude": ["__tests__"]
 }
