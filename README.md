@@ -1,4 +1,6 @@
-react-callforward
+[![npm version](https://img.shields.io/npm/v/react-callforward.svg)](https://www.npmjs.com/package/react-callforward) [![license](https://img.shields.io/npm/l/react-component-pack.svg?color=blue)](./LICENSE)
+
+react-callforward 
 =================
 
 We all know about callbacks in react, they provide a way for a parent component to provide the implementation of a function that is triggered by a nested component. What happens when you need the opposite? How do you trigger a command that is implemented in a nested component?
